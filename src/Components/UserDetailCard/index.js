@@ -87,7 +87,7 @@ const UserDetailCard = ({
             loading="lazy"
             allowFullScreen
             referrerPolicy="no-referrer-when-downgrade"
-            src={`https://www.google.com/maps/embed/v1/place?key=${process.env.local.REACT_APP_GOOGLE_API_KEY}&q=${location?.street}`}
+            src={`https://www.google.com/maps/embed/v1/place?key=${process.env.REACT_APP_GOOGLE_API_KEY}&q=${location?.street}`}
           ></iframe>
         </div>
       </div>
