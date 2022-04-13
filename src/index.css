@@ -1,13 +1,57 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+  --primary: #4725e4;
+  --secondary: #7148f8;
+  --success: #04a765;
+  --danger: #ef2601;
+  --warning: #e0cd04;
+  --info: #ff923e;
+  --light: #dadedd;
+  --dark: #211d1d;
+  --white: #fefbfb;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  background-color: var(--light)
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+html, body {
+  height: 100%;
+}
+
+html, body, ul, ol {
+  padding: 0;
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button {
+  border: none;
+}
+
+Link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+figure {
+  margin: 0;
 }
