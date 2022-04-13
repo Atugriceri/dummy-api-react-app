@@ -14,6 +14,7 @@ const UserDetailCard = ({
   updatedDate,
   location,
 }) => {
+
   return (
     <div className={styles.wrapper}>
       <div className={styles.userDetailCard}>
@@ -86,7 +87,7 @@ const UserDetailCard = ({
             loading="lazy"
             allowFullScreen
             referrerPolicy="no-referrer-when-downgrade"
-            src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyDaMkjG-2TJE19_-0NFC8g2QZ0wyTyDroE&q=${location?.street}`}
+            src={`https://www.google.com/maps/embed/v1/place?key=${process.env.REACT_APP_GOOGLE_API_KEY}&q=${location?.street}`}
           ></iframe>
         </div>
       </div>
