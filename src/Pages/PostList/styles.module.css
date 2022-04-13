@@ -1,0 +1,12 @@
+.postList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 1rem;
+  grid-auto-rows: minmax(300px, auto);
+  grid-auto-flow: dense;
+  margin: 0 3.5rem;
+  padding: 1rem 0;
+}
+
+
+
